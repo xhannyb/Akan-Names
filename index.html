@@ -29,8 +29,35 @@
                 <label for="date">Date Born:</label>
                 <input type="number" class="form-control" id="DATE" placeholder="Date of Birth Eg: 16th of March" name="DATE">
               </div>
-              
+              <div class="form-group">
+                <label for="month">GENDER</label><br>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="gender" id="MALE">&nbsp; MALE
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="RADIO" class="form-check-input" name="gender" id="female">&nbsp; FEMALE
+                  </label>
+                </div>
+              </div>
+              <button type="SUBMIT" class="btn btn-primary" onclick="findName();">NAME</button>
+              <br>
+            </form>
+            <p id="RESULTS"> </p>
         </div>
     </div>
+    <div class="card-deck">
+        <div class="card ">
+          <div class="card-body text-center">
+            <p class="card-text">Experience the Ghanian culture by finding out your Akan name today!</p>
+          </div>
+        </div>
+        <div class="card ">
+            <div class="card-body text-center">
+              <p class="card-text">Names are assigned based on your name and your gender. <br>
+                
+    <script src="javascript/script.js"></script>
 </body>
 </html>
