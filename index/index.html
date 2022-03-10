@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan-Names</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <style>
+      body{
+        background-image: url("/images/grey.jpg");
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1>Hello, Welcome To Akan-Names</h1>
+        <h2 id="get">Locate your Akan Name with a few simlpe steps</h2>
+    </div>
+    <div class="overlay">
+        <div class="container">
+          <h2>Insert your details</h2>
+          <form name="myForm" class="form" onsubmit="validate();">
+            <div class="form-group">
+              <label for="number">Year of Birth:</label>
+              <input type="number" class="form-control" id="year" placeholder="Year of Birth Eg: 1999 if born in the year 1999" name="year">
+            </div>
+            <div class="form-group">
+                <label for="month">Month Born:</label>
+                <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">
+              </div>
+              <div class="form-group">
+                <label for="date">Date Born:</label>
+                <input type="number" class="form-control" id="date" placeholder="Date of Birth Eg: 16th of March" name="date">
+              </div>
+              <div class="form-group">
+                <label for="month">GENDER</label><br>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; MALE
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; FEMALE
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>
+              <br>
+            </form>
+            <p id="results"> </p>
+        </div>
+    </div>
+    <div class="card-deck">
+        <div class="card ">
+          <div class="card-body text-center">
+            <p class="card-text">Experience the Ghanian culture by finding out your Akan name today!</p>
+          </div>
+        </div>
+        <div class="card ">
+            <div class="card-body text-center">
+              <p class="card-text">Names are assigned based on your name and your gender. <br>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-globe fa-stack-1x" style="color:rgb(188, 222, 252)"></i>
+                  </span><a href="https://en.wikipedia.org/wiki/Akan_names"> Akan names further description.</a>
+              </p>
+            </div>
+          </div>
+          <div class="card ">
+            <div class="card-body text-center">
+              <p class="card-text">In Ghana, it is typical for parents to name their children based on the day they were born.</p>
+            </div>
+          </div>
+      </div>
+      <footer class="page-footer ">
+        <div class="footer-copyright text-center py-3">Copyright © 2022:
+          <a href="https://github.com/xhannyb"> Shannon Bulimo</a>
+        </div>
+      </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
