@@ -12,12 +12,11 @@ Clears the form and resets the message on click
 # Contact Information
 For further queries, email me at shannonbulimo@gmail.com
 # Technologies Used
-# Licence and Copyright Information.
 HTML & CSS (Bootstrap)
 JavaScript (jQuery 3.4.1)
 
 
-
-#MIT License
+# Licence and Copyright Information.
+MIT License
 
 Copyright (c) 2022 Shannon
